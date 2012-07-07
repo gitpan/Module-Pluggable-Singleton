@@ -15,7 +15,7 @@ Module::Pluggable::Singleton - call/return single plugins on demand using shorte
 
 =head1 VERSION
 
-version 0.02.3
+Version 0.2.2
 
 =cut
 
@@ -175,3 +175,4 @@ See http://dev.perl.org/licenses/ for more information.
 =cut
 
 1; # End of Module::Pluggable::Singleton
+

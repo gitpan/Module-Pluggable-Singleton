@@ -5,12 +5,6 @@ package Module::Pluggable::Singleton::Object;
 {
   $Module::Pluggable::Singleton::Object::DIST = 'Module-Pluggable-Singleton';
 }
-{
-  $Module::Pluggable::Singleton::Object::VERSION = '0.2.2';
-}
-{
-  $Module::Pluggable::Singleton::Object::DIST = 'Module-Pluggable-Singleton';
-}
 
 use parent 'Module::Pluggable::Object';
 use Carp qw/croak confess/;
