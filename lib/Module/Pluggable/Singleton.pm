@@ -15,11 +15,11 @@ Module::Pluggable::Singleton - call/return single plugins on demand using shorte
 
 =head1 VERSION
 
-version 0.02.3
+version 0.03.0
 
 =cut
 
-our $VERSION = '0.02.3';
+our $VERSION = '0.03.0';
 
 =head1 SYNOPSIS
 
