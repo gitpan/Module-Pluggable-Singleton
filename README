@@ -3,7 +3,7 @@ NAME
     using shortened names
 
 VERSION
-    version 0.03.0
+    version 0.03
 
 SYNOPSIS
         package MyPluggable;
