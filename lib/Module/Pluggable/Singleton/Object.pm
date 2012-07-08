@@ -1,12 +1,6 @@
 package Module::Pluggable::Singleton::Object;
 {
-  $Module::Pluggable::Singleton::Object::VERSION = '0.03';
-}
-{
-  $Module::Pluggable::Singleton::Object::DIST = 'Module-Pluggable-Singleton';
-}
-{
-  $Module::Pluggable::Singleton::Object::VERSION = '0.2.2';
+  $Module::Pluggable::Singleton::Object::VERSION = '0.04';
 }
 {
   $Module::Pluggable::Singleton::Object::DIST = 'Module-Pluggable-Singleton';
@@ -22,7 +16,7 @@ Module::Pluggable::Singleton::Object
 
 =head1 VERSION
 
-version 0.2.2
+version 0.04
 
 =head1 METHODS
 
@@ -35,11 +29,10 @@ sub new {
     my %opts  = @_;
  
     $opts{require} = 1;
-    my $self = Module::Pluggable::Object->new(%opts);
+    my $obj = Module::Pluggable::Object->new(%opts);
 
-    my $self = bless $self, $class;
-
-    $self->_parse_plugins($class);
+    my $self = bless $obj, $class;
+    $self->_parse_plugins($opts{package} || $class);
 
     return $self;
 }
@@ -57,7 +50,7 @@ sub _parse_plugins {
         }
     }
 
-    warn "SEARCH_PATH: ". pp($self->{search_path})i
+    warn "SEARCH_PATH: ". pp($self->{search_path})
         if ($self->{debug});
 
 
