@@ -1,5 +1,8 @@
 package Module::Pluggable::Singleton;
 {
+  $Module::Pluggable::Singleton::VERSION = '0.05';
+}
+{
   $Module::Pluggable::Singleton::DIST = 'Module-Pluggable-Singleton';
 }
 
@@ -15,11 +18,9 @@ Module::Pluggable::Singleton - call/return single plugins on demand using shorte
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =cut
-
-our $VERSION = '0.04';
 
 =head1 SYNOPSIS
 
