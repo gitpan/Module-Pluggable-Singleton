@@ -28,13 +28,11 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "Data::Dump" => 0,
     "FindBin::libs" => 0,
-    "Module::Pluggable::Singleton" => 0,
     "Moose" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.05",
+  "VERSION" => "0.06",
   "test" => {
     "TESTS" => "t/*.t"
   }

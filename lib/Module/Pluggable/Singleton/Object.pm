@@ -1,6 +1,6 @@
 package Module::Pluggable::Singleton::Object;
 {
-  $Module::Pluggable::Singleton::Object::VERSION = '0.05';
+  $Module::Pluggable::Singleton::Object::VERSION = '0.06';
 }
 {
   $Module::Pluggable::Singleton::Object::DIST = 'Module-Pluggable-Singleton';
@@ -16,7 +16,7 @@ Module::Pluggable::Singleton::Object
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 METHODS
 
